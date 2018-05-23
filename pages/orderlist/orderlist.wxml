@@ -18,7 +18,7 @@
   </block>
   <block wx:if="{{mode === 'publish'}}">
     <published-item wx:for="{{publish_records}}" record="{{item}}"></published-item>
-    <text bindtap=''>继续发布 ></text>
+    <text bindtap='navigateToPublishHouse'>继续发布 ></text>
   </block>
 </view>
 

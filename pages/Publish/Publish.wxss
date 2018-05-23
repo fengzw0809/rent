@@ -1,0 +1,40 @@
+Page{
+  width: 100%;
+  height: 100%;
+  font-size: 33rpx;
+}
+
+.row{
+  margin-left: 25rpx;
+  margin-top: 3%;
+}
+.row > text{
+  display: block;
+  width: 100rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.row > input,
+.row > textarea{
+  display: inline-block;
+  width: 595rpx;
+  border: 2rpx #E0E3DA solid;
+}
+
+.row > input:hover,
+.row > textarea:hover{
+  border: 2rpx #72b990 solid;
+}
+
+.row > input{
+  height: 50rpx;
+}
+
+.page-wrapper > button{
+  display: block;
+  width: 85%;
+  margin: auto;
+  color: white;
+  background-color: #72b990;
+}

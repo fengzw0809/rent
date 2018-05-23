@@ -1,0 +1,33 @@
+<view class='page-wrapper'>
+  <view class='row'>
+    <text>标题：</text><input placeholder='请输入房屋标题'/>
+  </view>
+  <view class='row'>
+    <text>简介：</text><textarea placeholder='请输入房屋简介'></textarea>
+  </view>
+  <!--
+  <view>
+    <text>城市：</text><text></text>
+  </view>
+  <view>
+    <text>详细地址：</text><input/>
+  </view>
+  
+  <view>
+  <text>出租日期：</text>
+  
+    <picker mode="date" value="{{BeginDate}}" start="{{BeginDate}}" end="2020-12-31" bindchange="">
+        {{BeginDate}}>
+    </picker>
+    <text>至</text>
+    <picker mode="date" value="{{EndDate}}" start="{{BeginDate}}" end="2020-12-31" bindchange="">
+      {{EndDate}}>
+    </picker>
+  </view>
+  
+  <view class='row'>
+    <text>价格：￥</text><input/> <text>/晚</text>
+  </view>
+  !-->
+  <button class="" bindtap="">确认发布</button>
+</view>

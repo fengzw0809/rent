@@ -25,7 +25,7 @@ Page({
       owner_src: '../../assets/portrait.jpg'
     }, 
     {
-      name: '胡同民宿|四合院儿',
+      name: '胡同民宿|四合院儿差点死掉错过',
       brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111112',

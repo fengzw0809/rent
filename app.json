@@ -4,8 +4,8 @@
     "pages/infoModify/infoModify",
     "pages/citySelect/citySelect",
     "pages/profile/profile",
-    "pages/orderlist/orderlist"
-    
+    "pages/orderlist/orderlist",
+    "pages/Publish/Publish"
   ],
   "window": {
     "backgroundTextStyle": "light",

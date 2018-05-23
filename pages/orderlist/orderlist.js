@@ -132,5 +132,10 @@ Page({
     wx.switchTab({
       url: '../index/index',
     })
+  },
+  navigateToPublishHouse: function () {
+    wx.navigateTo({
+      url: '../Publish/Publish'
+    })
   }
 })

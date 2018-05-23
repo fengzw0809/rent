@@ -130,7 +130,9 @@ Page({
     })
   },
   navigateToPublishHouse: function() {
-    
+    wx.navigateTo({
+      url: '../Publish/Publish'
+    })
   },
   navigateToInfoModify: function() {
     wx.navigateTo({
