@@ -1,12 +1,18 @@
 const app = getApp()
-
+var dateTools = require('../../tools/dateTools.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentLocation: ''
+    currentLocation: '',
+    house_name: '',
+    house_info: '',
+    house_address: '',
+    house_city: '',
+    BeginDate: '',
+    EndDate: ''
   },
 
   /**
@@ -16,13 +22,19 @@ Page({
     this.setData({
       currentLocation: app.globalData.city
     }); 
+    this.setData({
+      house_city: currentLocation
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    this.setData({
+      BeginDate: dateTools.dateToStr(new Date()),
+      EndDate: dateTools.dateToStr(dateTools.addDate(new Date()))
+    })
   },
 
   /**
@@ -64,11 +76,22 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    
   },
   navigateToCitySelect: function () {
     wx.navigateTo({
       url: '../citySelect/citySelect?currentLocation=' + this.data.currentLocation,
     })
-  }
+  },
+  BeginDateChange: function (e) {
+    this.setData({
+      BeginDate: e.detail.value,
+      EndDate: dateTools.dateToStr(dateTools.addDate(dateTools.strToDate(e.detail.value)))
+    })
+  },
+  EndDateChange: function (e) {
+    this.setData({
+      EndDate: e.detail.value
+    })
+  },
 })

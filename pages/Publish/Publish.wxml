@@ -1,34 +1,32 @@
 <view class='page-wrapper'>
   <view class='row'>
-    <text>标题：</text><input placeholder='请输入房屋标题'/>
-  </view>
-  <view class='row'>
-    <text>简介：</text><textarea placeholder='请输入房屋简介' maxlength="-1"></textarea>
+    <text class='name-text'>标题：</text><input placeholder='请输入房屋标题' value="{{house_name}}"/>
   </view>
   
   <view class='row'>
-    <text>城市：</text><button class='city-select' bindtap='navigateToCitySelect'>{{currentLocation}} ></button>
+    <text class='name-text'>信息：</text><textarea placeholder='请输入房屋信息' maxlength="-1" value="{{house_info}}"></textarea>
   </view>
   
   <view class='row'>
-    <text>地址：</text><input placeholder='请输入详细地址'/>
+    <text class='name-text'>城市：</text><button class='city-select' bindtap='navigateToCitySelect'>{{currentLocation}}</button>
   </view>
-  <!--
-  <view>
-  <text>出租日期：</text>
   
-    <picker mode="date" value="{{BeginDate}}" start="{{BeginDate}}" end="2020-12-31" bindchange="">
-        {{BeginDate}}>
+  <view class='row'>
+    <text class='name-text'>地址：</text><input placeholder='请输入详细地址' value="{{house_address}}"/>
+  </view>
+  
+  <view class='row'>
+  <text class='name-text'>日期：</text>
+    <picker mode="date" value="{{BeginDate}}" start="{{BeginDate}}" end="2020-12-31" bindchange="BeginDateChange">
+        {{BeginDate}}
     </picker>
-    <text>至</text>
-    <picker mode="date" value="{{EndDate}}" start="{{BeginDate}}" end="2020-12-31" bindchange="">
-      {{EndDate}}>
+    <text class='to'>至</text>
+    <picker mode="date" value="{{EndDate}}" start="{{EndDate}}" end="2020-12-31" bindchange="EndDateChange">
+      {{EndDate}}
     </picker>
   </view>
-  
   <view class='row'>
-    <text>价格：￥</text><input/> <text>/晚</text>
+    <text class='name-text'>价格：</text> <text class='price-inline-text'>￥ </text><input class='price-input'/> <text class='price-inline-text'> /晚</text>
   </view>
-  !-->
-  <button class="row" bindtap="">确认发布</button>
+  <button class="publish" bindtap="">确认发布</button>
 </view>

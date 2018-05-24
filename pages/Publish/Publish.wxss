@@ -4,13 +4,19 @@ Page{
   font-size: 30rpx;
 }
 
+.publish {
+  margin-top: 3% !important;
+}
+
 .row{
-  margin-left: 25rpx;
   margin-top: 3%;
+  margin-left: 25rpx;
   display: block;
   overflow: hidden;
 }
-.row > text{
+
+/*输入项的名字*/
+.name-text{
   display: block;
   width: 100rpx;
   height: 50rpx;
@@ -18,6 +24,7 @@ Page{
   margin-top: 5rpx;
 }
 
+/*输入框*/
 .row > input,
 .row > textarea{
   display: inline-block;
@@ -25,13 +32,34 @@ Page{
   border: 2rpx #E0E3DA solid;
 }
 
+.row > input{
+  height: 50rpx;
+}
+
 .row > input:hover,
 .row > textarea:hover{
   border: 2rpx #72b990 solid;
 }
 
-.row > input{
-  height: 50rpx;
+/*两个日期选择器*/
+.row > picker{
+  height: 60rpx;
+   line-height: 60rpx;
+  background-color: #72b990;
+  color: white;
+  text-align: center;
+  width: 200rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  display: inline-block;
+  border-radius: 10rpx;
+  border: 0.5rpx solid #72bf90;
+}
+
+.to{
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .page-wrapper > button{
@@ -42,9 +70,29 @@ Page{
   background-color: #72b990;
 }
 
+/*选择城市按钮*/
 .city-select{
   background-color: #72b990;
   color: white;
-  width: 100rpx;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+/*输入价格*/
+.price-input{
+  width: 200rpx !important;
+}
+
+/*价格行行内text*/
+.price-inline-text{
+  display: inline-block;
   height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+  top: -15rpx;
 }
