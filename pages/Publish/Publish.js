@@ -13,19 +13,14 @@ Page({
     house_city: '',
     BeginDate: '',
     EndDate: '',
-    house_pics: [{}, {}, {}/*, {}, {}, {}, {}, {}, {}*/]
+    house_pics: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      currentLocation: app.globalData.city
-    }); 
-    this.setData({
-      house_city: currentLocation
-    })
+    
   },
 
   /**
@@ -33,16 +28,21 @@ Page({
    */
   onReady: function () {
     this.setData({
-      BeginDate: dateTools.dateToStr(new Date()),
-      EndDate: dateTools.dateToStr(dateTools.addDate(new Date()))
-    })
+      currentLocation: app.globalData.city
+    });
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      house_city: this.data.currentLocation
+    })
+    this.setData({
+      BeginDate: dateTools.dateToStr(new Date()),
+      EndDate: dateTools.dateToStr(dateTools.addDate(new Date()))
+    })
   },
 
   /**
@@ -95,8 +95,24 @@ Page({
       EndDate: e.detail.value
     })
   },
-  addPic: function() {
+  addPics: function() {
+    var that = this
     wx.chooseImage({
+      count: 9 - this.data.house_pics.length,
+      success: function(res) {
+        for (var i = 0; i < res.tempFilePaths.length; i++) {
+          that.data.house_pics.push(res.tempFilePaths[i]);
+        }
+        that.setData({
+          house_pics: that.data.house_pics    
+        })
+      }
+    })
+  },
+  previewPic: function(e) {
+    wx.previewImage({
+      current: this.data.house_pics[e.currentTarget.dataset.index],
+      urls: this.data.house_pics
     })
   }
 })

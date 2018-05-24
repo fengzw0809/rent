@@ -67,6 +67,7 @@ Page{
   margin: auto;
   color: white;
   background-color: #72b990;
+  margin-bottom: 50rpx;
 }
 
 /*选择城市按钮*/
@@ -107,7 +108,6 @@ Page{
   display: block;
   width: 100rpx;
   height: 50rpx;
-  margin-top: 5rpx;
 }
 
 .picture{
@@ -116,7 +116,6 @@ Page{
   height: 220rpx;
   margin-right: 15rpx;
   margin-bottom: 15rpx;
-  border: 1px red solid;
   position: relative;
   background-color: #F5F5F5;
 }
@@ -124,4 +123,18 @@ Page{
 .picture > image{
   width: 220rpx;
   height: 220rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*添加的图片*/
+.add-image{
+  width: 150rpx !important;
+  height: 150rpx !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

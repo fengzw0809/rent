@@ -6,7 +6,8 @@ Page({
    */
   data: {
     mode: 'rent',
-    book_records: [{
+    book_records: [
+    {
       house_photo_src: '../../assets/decoration/1.jpg',
       house_name: '胡同民宿|四合院儿',
       nights: '3',
@@ -17,40 +18,22 @@ Page({
       house_name: '胡同民宿|四合院儿',
       nights: '3',
       price: '331'
-    },
-    {
-      house_photo_src: '../../assets/decoration/3.jpg',
-      house_name: '胡同民宿|四合院儿',
-      nights: '3',
-      price: '331'
-    },
-    {
-      house_photo_src: '../../assets/decoration/4.jpg',
-      house_name: '胡同民宿|四合院儿',
-      nights: '3',
-      price: '331'
-    },
-    {
-      house_photo_src: '../../assets/decoration/5.jpg',
-      house_name: '胡同民宿|四合院儿',
-      nights: '3',
-      price: '331'
     }],
     publish_records: [
     {
-        house_photo_src: '../../assets/decoration/1.jpg',
-        house_name: '胡同民宿|四合院儿',
-        info: '噢噢噢噢哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦',
-        price: '331'
-    },
-    {
-      house_photo_src: '../../assets/decoration/2.jpg',
+      house_photo_src: '../../assets/decoration/3.jpg',
       house_name: '胡同民宿|四合院儿',
       info: '噢噢噢噢哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦',
       price: '331'
     },
     {
-      house_photo_src: '../../assets/decoration/3.jpg',
+      house_photo_src: '../../assets/decoration/4.jpg',
+      house_name: '胡同民宿|四合院儿',
+      info: '噢噢噢噢哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦',
+      price: '331'
+    },
+    {
+      house_photo_src: '../../assets/decoration/4.jpg',
       house_name: '胡同民宿|四合院儿',
       info: '噢噢噢噢哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦',
       price: '331'
