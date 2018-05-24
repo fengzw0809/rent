@@ -5,7 +5,7 @@
   </view>
   <view class='dw_right'>
   <input class="title_list" value="{{cityName}}" disabled='disabled' />
-  <button bindtap="navigateBackToIndex">确认</button>
+  <button bindtap="navigateBack">确认</button>
   </view>
 </view>
 <scroll-view   scroll-y="true" style="height: {{winHeight}}px;" scroll-into-view="{{scrollTopId}}" class="city_list">

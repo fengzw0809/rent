@@ -3,16 +3,17 @@
     <text>标题：</text><input placeholder='请输入房屋标题'/>
   </view>
   <view class='row'>
-    <text>简介：</text><textarea placeholder='请输入房屋简介'></textarea>
-  </view>
-  <!--
-  <view>
-    <text>城市：</text><text></text>
-  </view>
-  <view>
-    <text>详细地址：</text><input/>
+    <text>简介：</text><textarea placeholder='请输入房屋简介' maxlength="-1"></textarea>
   </view>
   
+  <view class='row'>
+    <text>城市：</text><button class='city-select' bindtap='navigateToCitySelect'>{{currentLocation}} ></button>
+  </view>
+  
+  <view class='row'>
+    <text>地址：</text><input placeholder='请输入详细地址'/>
+  </view>
+  <!--
   <view>
   <text>出租日期：</text>
   
@@ -29,5 +30,5 @@
     <text>价格：￥</text><input/> <text>/晚</text>
   </view>
   !-->
-  <button class="" bindtap="">确认发布</button>
+  <button class="row" bindtap="">确认发布</button>
 </view>

@@ -113,7 +113,7 @@ Page({
     var cityName = e.currentTarget.dataset.city;
     this.setData({ cityName: cityName })
   },
-  navigateBackToIndex: function() {
+  navigateBack: function() {
     let pages = getCurrentPages();
     let prevPage = pages[pages.length - 2];
     prevPage.setData({

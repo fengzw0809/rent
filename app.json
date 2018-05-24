@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/Publish/Publish",
     "pages/infoModify/infoModify",
     "pages/citySelect/citySelect",
     "pages/profile/profile",
-    "pages/orderlist/orderlist",
-    "pages/Publish/Publish"
+    "pages/orderlist/orderlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

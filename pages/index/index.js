@@ -106,6 +106,7 @@ Page({
           //为了与citySelect的名称对应
           var length = res.result.address_component.city.length;
           that.setData({ currentLocation: (res.result.address_component.city[length - 1] == '市' ? res.result.address_component.city.substr(0, length - 1) : res.result.address_component.city) });
+          app.globalData.city = that.data.currentLocation;
           that.cancelGpsLoading();
         },
         fail: function (res) {
