@@ -26,7 +26,20 @@
     </picker>
   </view>
   <view class='row'>
-    <text class='name-text'>价格：</text> <text class='price-inline-text'>￥ </text><input class='price-input'/> <text class='price-inline-text'> /晚</text>
+    <text class='name-text'>价格：</text><text class='price-inline-text'>￥</text><input class='price-input'/> <text class='price-inline-text'>/晚</text>
   </view>
+  <view class='row'>
+    <text class='pic-name-text'>图片：</text>
+    <view class='picture-container'>
+    <view class='picture' wx:for="{{house_pics}}">
+      <image mode='aspectFill' src='../../assets/display2.png'></image>
+    </view>
+    <view class='picture' wx:if="{{house_pics.length < 9}}">
+      <image mode='widthFix' src='../../assets/publish/add.png'></image>
+    </view>
+    </view>
+    
+  </view>
+
   <button class="publish" bindtap="">确认发布</button>
 </view>

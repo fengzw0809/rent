@@ -1,6 +1,5 @@
 Page{
   width: 100%;
-  height: 100%;
   font-size: 30rpx;
 }
 
@@ -43,8 +42,8 @@ Page{
 
 /*两个日期选择器*/
 .row > picker{
-  height: 60rpx;
-   line-height: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
   background-color: #72b990;
   color: white;
   text-align: center;
@@ -85,7 +84,9 @@ Page{
 
 /*输入价格*/
 .price-input{
-  width: 200rpx !important;
+  width: 150rpx !important;
+  margin-left: 3rpx;
+  margin-right: 3rpx;
 }
 
 /*价格行行内text*/
@@ -95,4 +96,32 @@ Page{
   line-height: 50rpx;
   position: relative;
   top: -15rpx;
+}
+
+.picture-container{
+  display: block;
+  width: 710rpx;
+}
+
+.pic-name-text{
+  display: block;
+  width: 100rpx;
+  height: 50rpx;
+  margin-top: 5rpx;
+}
+
+.picture{
+  display: inline-block;
+  width: 220rpx;
+  height: 220rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+  border: 1px red solid;
+  position: relative;
+  background-color: #F5F5F5;
+}
+
+.picture > image{
+  width: 220rpx;
+  height: 220rpx;
 }

@@ -12,7 +12,8 @@ Page({
     house_address: '',
     house_city: '',
     BeginDate: '',
-    EndDate: ''
+    EndDate: '',
+    house_pics: [{}, {}, {}/*, {}, {}, {}, {}, {}, {}*/]
   },
 
   /**
@@ -94,4 +95,8 @@ Page({
       EndDate: e.detail.value
     })
   },
+  addPic: function() {
+    wx.chooseImage({
+    })
+  }
 })
