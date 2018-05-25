@@ -4,7 +4,16 @@
     <text class='house-owner-name'></text>
     <image class='house-owner-photo'></image>
   </view>
-  <swiper>
-  
+  <swiper class='house-pics'>
+    <swiper-item>
+      <image src="{{item}}" mode="widthFix"></image>
+    </swiper-item>
   </swiper>
+  <text class='house-info'></text>
+  <view class='house-date'>
+    <text class='house-date-start'></text>
+    <text class='house-date-end'></text>
+  </view>
+  <text class='house-price'></text>
+  <button class='btn-book'>立即预订</button>
 </view>
