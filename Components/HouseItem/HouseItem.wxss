@@ -14,10 +14,6 @@
   border-radius: 50%;
 }
 
-.house-brief-info{
-  font-size: 28rpx;
-}
-
 .house-name{
   font-size: 32rpx;
 }

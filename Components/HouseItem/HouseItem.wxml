@@ -3,6 +3,5 @@
   <image class='image-wrapper' src='{{house.photo_src}}' mode="widthFix"></image>
   <image class='usr-photo-wrapper' src='{{house.owner_src}}'></image>
   <view class='house-name'>{{house.name}}</view>
-  <view class='house-brief-info'>{{house.brief_info}}</view>
   <view class='house-price'>{{house.price}}</view>
 </view>

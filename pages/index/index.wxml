@@ -13,11 +13,9 @@
 
 <view class="main-wrapper">
   <swiper indicator-dots='true' autoplay='true' interval='5000' duration='500' circular="true" indicator-active-color="white">
-    <block wx:for="{{imgUrls}}">
-      <swiper-item>
+      <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
         <image src="{{item}}" mode="widthFix"></image>
       </swiper-item>
-    </block>
   </swiper> 
   <view class='outter-container'>
     <view class='left-column-container'>

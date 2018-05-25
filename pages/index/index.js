@@ -18,7 +18,6 @@ Page({
     houses: [
     {
       name: '胡同民宿|四合院儿',
-      brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111111',
       photo_src: '../../assets/decoration/1.jpg',
@@ -26,7 +25,6 @@ Page({
     }, 
     {
       name: '胡同民宿|四合院儿差点死掉错过',
-      brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111112',
       photo_src: '../../assets/decoration/2.jpg',
@@ -34,7 +32,6 @@ Page({
     },
     {
       name: '胡同民宿|四合院儿',
-      brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111113',
       photo_src: '../../assets/decoration/3.jpg',
@@ -42,7 +39,6 @@ Page({
     },
     {
       name: '胡同民宿|四合院儿',
-      brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111114',
       photo_src: '../../assets/decoration/4.jpg',
@@ -50,7 +46,6 @@ Page({
     },
     {
       name: '胡同民宿|四合院儿',
-      brief_info: '整间阁楼.一室一床',
       price: '￥311 每晚',
       id: '111114',
       photo_src: '../../assets/decoration/5.jpg',

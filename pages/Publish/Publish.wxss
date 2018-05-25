@@ -74,7 +74,7 @@ Page{
 .city-select{
   background-color: #72b990;
   color: white;
-  width: 120rpx;
+  width: 150rpx;
   height: 60rpx;
   line-height: 60rpx;
   font-size: 30rpx;

@@ -1,7 +1,6 @@
 const app = getApp()
 var dateTools = require('../../tools/dateTools.js');
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -11,6 +10,7 @@ Page({
     house_info: '',
     house_address: '',
     house_city: '',
+    house_price: '',
     BeginDate: '',
     EndDate: '',
     house_pics: []
@@ -19,17 +19,36 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    
+  onLoad: function () {
+    /*第一次加载用首页的城市、真实时间*/
+    if (app.globalData.isFirstPublish) {
+      this.setData({
+        currentLocation: app.globalData.city,
+        BeginDate: dateTools.dateToStr(new Date()),
+        EndDate: dateTools.dateToStr(dateTools.addDate(new Date()))
+      })
+      app.globalData.isFirstPublish = false;
+    }
+    else {
+      this.setData({
+        house_name: app.globalData.publishItem.house_name,
+        house_info: app.globalData.publishItem.house_info,
+        house_city: app.globalData.publishItem.house_city,
+        house_price: app.globalData.publishItem.house_price,
+        house_address: app.globalData.publishItem.house_address,
+        BeginDate: app.globalData.publishItem.BeginDate,
+        EndDate: app.globalData.publishItem.EndDate,
+        house_pics: app.globalData.publishItem.house_pics,
+        currentLocation: app.globalData.publishItem.house_city /*一举两得，使citySelect页面可以有值，onshow那里也不用判断是否为空 */
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.setData({
-      currentLocation: app.globalData.city
-    });
+    
   },
 
   /**
@@ -39,24 +58,27 @@ Page({
     this.setData({
       house_city: this.data.currentLocation
     })
-    this.setData({
-      BeginDate: dateTools.dateToStr(new Date()),
-      EndDate: dateTools.dateToStr(dateTools.addDate(new Date()))
-    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    app.globalData.publishItem.house_name = this.data.house_name;
+    app.globalData.publishItem.house_info = this.data.house_info;
+    app.globalData.publishItem.house_address = this.data.house_address;
+    app.globalData.publishItem.house_price = this.data.house_price;
+    app.globalData.publishItem.house_city = this.data.house_city;
+    app.globalData.publishItem.BeginDate = this.data.BeginDate;
+    app.globalData.publishItem.EndDate = this.data.EndDate;
+    app.globalData.publishItem.house_pics = this.data.house_pics;
   },
 
   /**
@@ -94,6 +116,27 @@ Page({
     this.setData({
       EndDate: e.detail.value
     })
+    app.globalData.EndDate = this.data.EndDate;
+  },
+  houseNameChange: function(e) {
+    this.setData({
+      house_name: e.detail.value
+    })
+  },
+  houseInfoChange: function (e) {
+    this.setData({
+      house_info: e.detail.value
+    })
+  },
+  houseAddressChange: function (e) {
+    this.setData({
+      house_address: e.detail.value
+    })
+  },
+  housePriceChange: function (e) {
+    this.setData({
+      house_price: e.detail.value
+    })
   },
   addPics: function() {
     var that = this
@@ -105,7 +148,7 @@ Page({
         }
         that.setData({
           house_pics: that.data.house_pics    
-        })
+        })    
       }
     })
   },

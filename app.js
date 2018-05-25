@@ -1,9 +1,5 @@
 //app.js
 App({
-  globalData: {
-    city: ''
-  },
-
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -38,6 +34,19 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    city: '',
+    isFirstPublish: true,
+    publishItem: {
+      currentLocation: '',
+      house_name: '',
+      house_info: '',
+      house_address: '',
+      house_city: '',
+      house_price: '',
+      BeginDate: '',
+      EndDate: '',
+      house_pics: []
+    }
   }
 })
