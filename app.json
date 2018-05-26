@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/houseInfo/houseInfo",
     "pages/index/index",
     "pages/Publish/Publish",
     "pages/infoModify/infoModify",
     "pages/citySelect/citySelect",
     "pages/profile/profile",
-    "pages/houseInfo/houseInfo",
+    
     "pages/orderlist/orderlist"
     
   ],

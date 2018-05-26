@@ -153,6 +153,7 @@ Page({
     })
   },
   previewPic: function(e) {
+    
     wx.previewImage({
       current: this.data.house_pics[e.currentTarget.dataset.index],
       urls: this.data.house_pics
