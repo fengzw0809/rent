@@ -6,10 +6,43 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+   /* wx.request({
+      url: 'https://windymen.mynatapp.cc/user/fengyh/',
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+    })*/
+
+    wx.showToast({
+      title: '正在登陆',
+      icon: 'loading'
+    })
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code)
+        wx.request({
+          url: 'https://windymen.mynatapp.cc/session/',
+          data: {
+            code: res.code
+          },
+          header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Access-Control-Allow-Origin": "*",
+            
+          },
+          method: 'POST',
+          success: function (res) {
+            console.log(res.data)
+          }
+        })
+        wx.hideToast()
       }
     })
     // 获取用户信息

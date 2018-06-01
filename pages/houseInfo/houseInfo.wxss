@@ -91,7 +91,7 @@ swiper-item > image{
   height: 95rpx;
   width: 92%;
   margin: auto;
-  margin-top: 25rpx;
+  margin-top: 50rpx;
   font-size: 30rpx;
   position: relative;  
 }
@@ -108,7 +108,6 @@ swiper-item > image{
   background-color: #72b990;
   color: white;
   text-align: center;
-  width: 180rpx;
   padding-left: 10rpx;
   padding-right: 10rpx;
   display: inline-block;
@@ -127,7 +126,7 @@ swiper-item > image{
   display: block;
   width: 85%;
   margin: auto;
-  margin-top: 25rpx;
+  margin-top: 50rpx;
   color: white;
   background-color: #72b990;
   margin-bottom: 50rpx;

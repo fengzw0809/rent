@@ -20,15 +20,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function() {
-    /*var that = this;
+    var that = this;
+    /*wx.showToast({
+      title: '正在登陆',
+      icon: 'loading'
+    })
     wx.login({
       //获取code
       success: function (res) {
         that.setData({code: res.code})
+        
       }
-    })
+    })*/
 
-    wx.request({
+    /*wx.request({
       url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + 'wx1fc7283d72fb0be8' + '&secret=' + '1b52397140e7b75ae54f48df83b8481a' + '&js_code=' + that.code + '&grant_type=authorization_code',
       data: {},
       header: {

@@ -120,5 +120,9 @@ Page({
       url: '../citySelect/citySelect?currentLocation=' + this.data.currentLocation,
     })
   },
-  
+  navigateToHouseInfo: function() {
+    wx.navigateTo({
+      url: '../houseInfo/houseInfo',
+    })
+  }
 })

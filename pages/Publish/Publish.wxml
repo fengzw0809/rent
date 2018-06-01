@@ -39,5 +39,5 @@
     </view>
     </view>
   </view>
-  <button class="publish" bindtap="">确认发布</button>
+  <button class="publish" bindtap="publish">确认发布</button>
 </view>

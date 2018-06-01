@@ -19,10 +19,10 @@
   </swiper> 
   <view class='outter-container'>
     <view class='left-column-container'>
-      <house-item wx:if="{{index % 2 === 0}}" wx:for="{{houses}}" wx:key="{{item.id}}" house="{{item}}"></house-item>
+      <house-item wx:if="{{index % 2 === 0}}" wx:for="{{houses}}" wx:key="{{item.id}}" house="{{item}}" bindtap="navigateToHouseInfo"></house-item>
     </view>
     <view class='right-column-container'>
-      <house-item wx:if="{{index % 2 === 1}}" wx:for="{{houses}}" wx:key="{{item.id}}" house="{{item}}"></house-item>
+      <house-item wx:if="{{index % 2 === 1}}" wx:for="{{houses}}" wx:key="{{item.id}}" house="{{item}}" bindtap="navigateToHouseInfo"></house-item>
     </view>
   </view>
 </view>

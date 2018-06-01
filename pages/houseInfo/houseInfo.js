@@ -12,7 +12,7 @@ Page({
     house_pics: ['../../assets/display1.jpg',
                 '../../assets/display2.png',
                 '../../assets/display3.png'],
-    house_info: '该单位位于伦敦市中心最热闹的地区之一肖尔迪奇(Shoreditch)。该公寓距离伦敦塔，塔桥，布里克巷，Spitalfields市场10-15分钟的步行距离，而该地区最好的烤肉屋和印度餐馆都在5分钟的步行距离之内。 因此，无论短期还是长期逗留，肯定会是这个惊人的大都市所提供的令人兴奋的味道。 ',
+    house_info: '该单位位于伦敦市中心最热闹的地区之一肖尔迪奇(Shoreditch)。该公寓距离伦敦塔，塔桥，布里克巷，Spitalfields市场10-15分钟的步行距离，而该地区最好的烤肉屋和印度餐馆都在5分钟的步行距离之内。 因此，无论短期还是长期逗留，肯定会是这个惊人的大都市所提供的令人兴奋的味道。',
     house_start_date: '2018-05-26',
     house_end_date: '2018-05-27',
     house_price: '331'
